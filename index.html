@@ -38,10 +38,36 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
+        /* Apply to the entire body */
         body {
             background: #fafafa;
             color: #333;
+            overflow: scroll; /* Ensure scrolling is enabled */
         }
+
+        /* Make the scrollbar invisible on all browsers */
+        body::-webkit-scrollbar {
+            width: 8px; /* width of the scrollbar */
+        }
+
+        body::-webkit-scrollbar-track {
+            background: transparent; /* make the track invisible */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: transparent; /* make the thumb invisible */
+        }
+
+        body::-webkit-scrollbar-thumb:hover {
+            background: transparent; /* keep the thumb invisible on hover */
+        }
+
+        /* For Firefox */
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -113,6 +139,7 @@
                 font-size: 1rem;
                 padding: 10px 20px;
             }
+
         }
     </style>
 </body>
