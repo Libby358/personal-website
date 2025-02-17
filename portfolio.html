@@ -4,40 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio - Software Developer | Web Developer">
-    <title>Portfolio - Your Name</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Portfolio - Libby Griffiths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <section class="portfolio">
-        <h1>My Projects</h1>
-        <div class="projects">
-            <div class="project">
-                <h2>Project Title</h2>
-                <p>A brief description of the project.</p>
-                <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, Node.js</p>
-                <a href="https://github.com/yourprofile/project" target="_blank">GitHub</a>
-                <a href="https://yourproject.live" target="_blank">Live Demo</a>
+        <section class="portfolio fade-in">
+            <h1 class="portfolio-title">My Work</h1>
+            <p class="portfolio-text">Here are some of the exciting projects I've worked on, blending creativity with cutting-edge technology.</p>
+            
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>A web-based application that streamlines workflow efficiency.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>A mobile-friendly e-commerce platform with seamless user experience.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>An AI-powered chatbot that enhances customer interactions.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
             </div>
-            <!-- Repeat for other projects -->
-        </div>
-    </section>
+        </section>
+    </div>
     
     <footer>
         <p>&copy; 2025 Your Name. All Rights Reserved.</p>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: #fafafa;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        .portfolio-title {
+            font-size: 3rem;
+            font-family: 'Pacifico', cursive;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+        .portfolio-text {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .project-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .btn {
+            text-decoration: none;
+            background: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </body>
 </html>
