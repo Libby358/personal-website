@@ -6,7 +6,7 @@
     <meta name="description" content="Personal Website - Software Developer | Web Developer">
     <title>Your Name - Developer & Designer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -22,8 +22,9 @@
         
         <section class="hero">
             <div class="hero-content">
+                <h1 class="welcome">Welcome!</h1>
                 <img src="profile.jpg" alt="Libby Griffiths" class="profile-img">
-                <h1>Hi, I'm Libby Griffiths</h1>
+                <h2>Hi, I'm Libby Griffiths</h2>
                 <p>Developer & Designer passionate about crafting intuitive and beautiful digital experiences.</p>
                 <a href="#portfolio" class="btn">View My Work</a>
             </div>
@@ -47,6 +48,7 @@
             align-items: center;
             height: 100vh;
             justify-content: center;
+            text-align: center;
         }
         nav ul {
             display: flex;
@@ -63,20 +65,23 @@
         nav ul li a:hover {
             color: #007BFF;
         }
-        .hero {
-            text-align: center;
-        }
         .hero-content {
-            max-width: 500px;
+            max-width: 600px;
+        }
+        .welcome {
+            font-size: 4rem;
+            font-family: 'Pacifico', cursive;
+            color: #007BFF;
+            margin-bottom: 20px;
         }
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
         }
-        h1 {
+        h2 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 10px;
@@ -89,9 +94,9 @@
             text-decoration: none;
             background: #007BFF;
             color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 1.1rem;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2rem;
             transition: background 0.3s ease;
         }
         .btn:hover {
