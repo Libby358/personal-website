@@ -36,14 +36,6 @@
             box-sizing: border-box;
             font-family: 'Inter', sans-serif;
         }
-        body {
-            background: #fafafa;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh; /* Ensures content is centered */
-        }
 
         .container {
             display: flex;
@@ -53,6 +45,13 @@
             padding: 40px;
             width: 90%;
             max-width: 800px;
+        }
+
+        body {
+            background: #fafafa;
+            color: #333;
+            /*padding-top: 80px;  Adjusted padding to account for the fixed navbar */
+            overflow-y: scroll; /* Ensures scrollbar appears when needed */
         }
 
         .navigation {
