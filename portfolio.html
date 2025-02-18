@@ -57,14 +57,18 @@
         body {
             background: #fafafa;
             color: #333;
+            display: flex;
+            justify-content: center; /* Horizontally centers the content */
+            align-items: center; /* Vertically centers the content */
+            height: 100vh;
+            text-align: center;
+            margin: 0;
         }
         .container {
-            max-width: 1200px; /* Prevents content from stretching too much */
             width: 100%;
-            margin: 0 auto;
-            display: block; /* Ensures proper alignment */
-            text-align: center;
+            max-width: 1200px; /* Prevents content from stretching too much */
             padding: 40px;
+            box-sizing: border-box;
         }
         nav ul {
             display: flex;
