@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Me - Software Developer | Web Developer">
-    <title>Contact - Your Name</title>
+    <title>Contact - Libby Griffiths</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -39,6 +39,20 @@
         body {
             background: #fafafa;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensures content is centered */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            width: 90%;
+            max-width: 800px;
         }
 
         .navigation {
@@ -60,14 +74,8 @@
             color: #75975e;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: auto; /* Allow content to flow properly */
-            justify-content: flex-start;
-            text-align: center;
-            padding: 40px;
+        .contact {
+            padding-bottom: 60px; /* Ensures button doesn't overlap content */
         }
 
         .contact-title {
@@ -84,7 +92,6 @@
             line-height: 1.6;
             text-align: center;
             margin: 0 auto;
-            padding-bottom: 30px;
         }
 
         .contact-subtitle {
@@ -104,13 +111,14 @@
 
         .btn {
             text-decoration: none;
-            margin-top: 40px; /* Increased margin-top to separate button from text */
+            margin-top: 20px; /* Increased margin for better separation */
             background: #75975e;
             color: white;
             padding: 12px 25px;
             border-radius: 30px;
             font-size: 1.2rem;
             transition: background 0.3s ease;
+            display: inline-block;
         }
 
         .btn:hover {
