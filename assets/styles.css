@@ -205,11 +205,6 @@ p {
     animation: fadeIn 1s forwards ease-in-out;
 }
 
-.project-card img{
-    width: 220px;
-    height: 220px;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
