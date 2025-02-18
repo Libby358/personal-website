@@ -48,105 +48,134 @@
     </div>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            background: #fafafa;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 40px;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
+
+    body {
+        background: #fafafa;
+        color: #333;
+        overflow-x: hidden;
+        padding-top: 40px; /* Adjusted to allow space before navbar */
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        background: white;
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+        margin-bottom: 20px; /* Moves it down slightly above the welcome text */
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #75975e;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .welcome {
+        font-size: 4rem;
+        font-family: 'Pacifico', cursive;
+        color: #75975e;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        text-decoration: none;
+        background: #75975e;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #c7DDB5;
+    }
+
+    @media (max-width: 768px) {
         nav ul {
-            display: flex;
-            list-style: none;
-            gap: 20px;
-            margin-bottom: 20px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #75975e;
-        }
-        .portfolio-title {
+
+        .welcome {
             font-size: 3rem;
-            font-family: 'Pacifico', cursive;
-            color: #75975e;
-            margin-bottom: 20px;
         }
-        .portfolio-text {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            max-width: 800px;
-            line-height: 1.6;
-            padding-bottom: 30px;
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
         }
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-            width: 100%;
+
+        h2 {
+            font-size: 2rem;
         }
-        .project-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .project-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-        .project-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-        .btn {
-            text-decoration: none;
-            background: #75975e;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
+
+        p {
             font-size: 1rem;
-            transition: background 0.3s ease;
         }
-        .btn:hover {
-            background: #c7DDB5;
+
+        .btn {
+            font-size: 1rem;
+            padding: 10px 20px;
         }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 1s forwards ease-in-out;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+    }
     </style>
 </body>
 </html>
