@@ -61,8 +61,7 @@ body {
     height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    image-rendering: pixelated;
+    margin-bottom: 20px;;
 }
 
 h2 {
