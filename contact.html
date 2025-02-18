@@ -4,42 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Me - Software Developer | Web Developer">
-    <title>Contact - Your Name</title>
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Contact - Libby Griffiths</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Simple text links as navigation -->
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
 
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <form action="submit_contact_form.php" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+        <section class="contact fade-in">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-text">I'd love to hear from you! Whether you have a question, feedback, or want to collaborate, feel free to reach out. I'm always open to new opportunities.</p>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <h2 class="contact-subtitle">Contact Information</h2>
+            <p>Email: <a href="mailto:yourname@example.com" class="contact-link">yourname@example.com</a></p>
+            <p>Phone: <a href="tel:+1234567890" class="contact-link">+123 456 7890</a></p>
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+            <a href="mailto:yourname@example.com" class="btn">Send me an Email</a>
+        </section>
+    </div>
 
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-    </footer>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background: #fafafa;
+            color: #333;
+        }
 
-    <script src="assets/script.js"></script>
+        .navigation {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #75975e;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .contact-title {
+            font-size: 3rem;
+            font-family: 'Pacifico', cursive;
+            color: #75975e;
+            margin-bottom: 20px;
+        }
+
+        .contact-text {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 800px;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0 auto;
+            padding-bottom: 30px;
+        }
+
+        .contact-subtitle {
+            font-size: 2rem;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .contact-link {
+            color: #75975e;
+            text-decoration: none;
+        }
+
+        .contact-link:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            text-decoration: none;
+            margin-top: 20px;
+            background: #75975e;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #c7DDB5;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-title {
+                font-size: 2.5rem;
+            }
+            .contact-text {
+                font-size: 1rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
 </body>
 </html>
