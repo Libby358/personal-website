@@ -258,6 +258,9 @@ p {
         font-size: 1rem;
         padding: 0 20px;
     }
+    .about-text highlight{
+        color: #75975e; 
+    }
 }
 
 /* Hide Scrollbar */
