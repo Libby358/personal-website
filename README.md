@@ -46,9 +46,6 @@
 **Components:**
 - A list of blog posts with a summary and read-more option
 - Categories or tags (e.g., JavaScript, React, Web Development)
-- A search bar for easy navigation
-- Commenting feature (optional, could be powered by Disqus or similar)
-- RSS feed (optional)
 
 ### Contact Page
 
@@ -58,7 +55,6 @@
 - A contact form (name, email, message)
 - My professional email address
 - Links to social media or communication platforms (LinkedIn, Twitter, etc.)
-- Optional: Embedded map (if you want to show your location)
 
 ## 2. Core Features & Functionality:
 
