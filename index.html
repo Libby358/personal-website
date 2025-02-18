@@ -31,131 +31,131 @@
         </section>
     </div>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Inter', sans-serif;
+    }
 
-        body {
-            background: #fafafa;
-            color: #333;
-            overflow-x: hidden;
-            padding-top: 60px; /* Prevent content from being hidden behind navbar */
-        }
+    body {
+        background: #fafafa;
+        color: #333;
+        overflow-x: hidden;
+        padding-top: 60px; /* Prevent content from being hidden behind navbar */
+    }
 
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-        }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+        text-align: center;
+        z-index: 1000;
+    }
 
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #75975e;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 600px;
+    }
+
+    .welcome {
+        font-size: 4rem;
+        font-family: 'Pacifico', cursive;
+        color: #75975e;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        text-decoration: none;
+        background: #75975e;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 30px;
+        font-size: 1.2rem;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #c7DDB5;
+    }
+
+    @media (max-width: 768px) {
         nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #75975e;
-        }
-
-        .container {
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 600px;
+            gap: 10px;
         }
 
         .welcome {
-            font-size: 4rem;
-            font-family: 'Pacifico', cursive;
-            color: #75975e;
-            margin-bottom: 20px;
+            font-size: 3rem;
         }
 
         .profile-img {
-            width: 220px;
-            height: 220px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
+            width: 180px;
+            height: 180px;
         }
 
         h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
+            font-size: 2rem;
         }
 
         p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+            font-size: 1rem;
         }
 
         .btn {
-            text-decoration: none;
-            background: #75975e;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 30px;
-            font-size: 1.2rem;
-            transition: background 0.3s ease;
+            font-size: 1rem;
+            padding: 10px 20px;
         }
-
-        .btn:hover {
-            background: #c7DDB5;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .welcome {
-                font-size: 3rem;
-            }
-
-            .profile-img {
-                width: 180px;
-                height: 180px;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-
-            .btn {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-        }
-    </style>
+    }
+</style>
 </body>
 </html>
