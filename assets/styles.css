@@ -21,12 +21,6 @@ body {
     margin-bottom: 20px;
 }
 
-.profile-img {
-    image-rendering: smooth;
-    image-rendering: high-quality;
-  }
-
-
 .navigation a {
     text-decoration: none;
     color: #333;
@@ -68,6 +62,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
+    image-rendering: pixelated;
 }
 
 h2 {
