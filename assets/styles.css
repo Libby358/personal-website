@@ -21,6 +21,14 @@ body {
     margin-bottom: 20px;
 }
 
+.smooth {
+    image-rendering: smooth;
+  }
+  
+  .high-quality {
+    image-rendering: high-quality;
+  }
+
 .navigation a {
     text-decoration: none;
     color: #333;
