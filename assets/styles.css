@@ -21,13 +21,11 @@ body {
     margin-bottom: 20px;
 }
 
-.smooth {
+.profile-img {
     image-rendering: smooth;
-  }
-  
-  .high-quality {
     image-rendering: high-quality;
   }
+
 
 .navigation a {
     text-decoration: none;
