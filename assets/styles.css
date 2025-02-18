@@ -131,9 +131,10 @@ p {
 }
 
 .project-card img {
-    width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
+    width: 338px;
+    height: 220px;
 }
 
 .project-card h3 {
@@ -228,7 +229,7 @@ p {
     }
 
     .project-card img{
-        width: 180px;
+        width: 250px;
         height: 180px;
     }
 
