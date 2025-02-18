@@ -155,6 +155,10 @@ p {
     padding-bottom: 0;
 }
 
+.contact-info p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .contact-link {
     color: #75975e;
