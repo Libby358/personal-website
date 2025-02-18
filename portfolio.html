@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -55,6 +55,7 @@
         body {
             background: #fafafa;
             color: #333;
+            padding-top: 80px; /* Adjusted padding to account for the fixed navbar */
             overflow-y: scroll; /* Ensures scrollbar appears when needed */
         }
 
@@ -62,12 +63,7 @@
             display: flex;
             justify-content: center;
             gap: 30px;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: white;
-            padding: 20px;
-            z-index: 1000; /* Keeps the navbar on top */
+            margin-bottom: 20px;
         }
 
         .navigation a {
@@ -180,6 +176,13 @@
         }
 
         @media (max-width: 768px) {
+
+            body {
+            background: #fafafa;
+            color: #333;
+            padding-top: 20px; /* Adjusted padding to account for the fixed navbar */
+            }
+            
             .projects-grid {
                 grid-template-columns: 1fr; /* Ensures a single column layout on smaller screens */
             }
@@ -207,3 +210,4 @@
     </style>
 </body>
 </html>
+
