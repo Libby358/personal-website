@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- Chessboard -->
+  <g transform="translate(100, 50)">
+    <!-- Board outline -->
+    <rect x="0" y="0" width="200" height="200" fill="#e6d9b8" stroke="#614726" stroke-width="4"/>
+    
+    <!-- Dark squares -->
+    <rect x="0" y="0" width="25" height="25" fill="#614726"/>
+    <rect x="50" y="0" width="25" height="25" fill="#614726"/>
+    <rect x="100" y="0" width="25" height="25" fill="#614726"/>
+    <rect x="150" y="0" width="25" height="25" fill="#614726"/>
+    
+    <rect x="25" y="25" width="25" height="25" fill="#614726"/>
+    <rect x="75" y="25" width="25" height="25" fill="#614726"/>
+    <rect x="125" y="25" width="25" height="25" fill="#614726"/>
+    <rect x="175" y="25" width="25" height="25" fill="#614726"/>
+    
+    <rect x="0" y="50" width="25" height="25" fill="#614726"/>
+    <rect x="50" y="50" width="25" height="25" fill="#614726"/>
+    <rect x="100" y="50" width="25" height="25" fill="#614726"/>
+    <rect x="150" y="50" width="25" height="25" fill="#614726"/>
+    
+    <rect x="25" y="75" width="25" height="25" fill="#614726"/>
+    <rect x="75" y="75" width="25" height="25" fill="#614726"/>
+    <rect x="125" y="75" width="25" height="25" fill="#614726"/>
+    <rect x="175" y="75" width="25" height="25" fill="#614726"/>
+    
+    <rect x="0" y="100" width="25" height="25" fill="#614726"/>
+    <rect x="50" y="100" width="25" height="25" fill="#614726"/>
+    <rect x="100" y="100" width="25" height="25" fill="#614726"/>
+    <rect x="150" y="100" width="25" height="25" fill="#614726"/>
+    
+    <rect x="25" y="125" width="25" height="25" fill="#614726"/>
+    <rect x="75" y="125" width="25" height="25" fill="#614726"/>
+    <rect x="125" y="125" width="25" height="25" fill="#614726"/>
+    <rect x="175" y="125" width="25" height="25" fill="#614726"/>
+    
+    <rect x="0" y="150" width="25" height="25" fill="#614726"/>
+    <rect x="50" y="150" width="25" height="25" fill="#614726"/>
+    <rect x="100" y="150" width="25" height="25" fill="#614726"/>
+    <rect x="150" y="150" width="25" height="25" fill="#614726"/>
+    
+    <rect x="25" y="175" width="25" height="25" fill="#614726"/>
+    <rect x="75" y="175" width="25" height="25" fill="#614726"/>
+    <rect x="125" y="175" width="25" height="25" fill="#614726"/>
+    <rect x="175" y="175" width="25" height="25" fill="#614726"/>
+    
+    <!-- Example chess pieces -->
+    <!-- White King -->
+    <g transform="translate(112.5, 187.5)">
+      <circle r="10" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <line x1="0" y1="-8" x2="0" y2="8" stroke="#000000" stroke-width="1"/>
+      <line x1="-5" y1="0" x2="5" y2="0" stroke="#000000" stroke-width="1"/>
+    </g>
+    
+    <!-- Black Queen -->
+    <g transform="translate(87.5, 62.5)">
+      <circle r="10" fill="#000000" stroke="#ffffff" stroke-width="1"/>
+      <circle r="3" fill="none" stroke="#ffffff" stroke-width="1" cy="-4"/>
+      <path d="M-5,2 L5,2" stroke="#ffffff" stroke-width="1" fill="none"/>
+      <path d="M-3,5 L3,5" stroke="#ffffff" stroke-width="1" fill="none"/>
+    </g>
+    
+    <!-- White Knight -->
+    <g transform="translate(137.5, 137.5)">
+      <path d="M-5,-5 C-2,-10 5,-8 5,-2 C5,5 -8,8 -5,0 Z" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="280" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Chess Game</text>
+</svg>
